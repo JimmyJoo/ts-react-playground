@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter';
 import Greetings from './Greetings';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         optionalMsg="Welcome back!"
         onClick={onClick}
       />
+      <Counter />
     </div>
   );
 }
