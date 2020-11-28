@@ -1,12 +1,18 @@
 import React from 'react';
 import Counter from './Counter';
 import Greetings from './Greetings';
+import Form from './Form';
 
 function App() {
   const onClick = (name: string) => {
     console.log(name);
   };
 
+  const onSubmit = (form: { name: string; description: string }) => {
+    const { name, description } = form;
+    console.log('name: ', name);
+    console.log('description: ', description);
+  };
   return (
     <div>
       <Greetings
@@ -17,6 +23,7 @@ function App() {
         onClick={onClick}
       />
       <Counter />
+      <Form onSubmit={onSubmit} />
     </div>
   );
 }
