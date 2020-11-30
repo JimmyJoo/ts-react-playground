@@ -3,6 +3,7 @@ import Counter from './Counter';
 import Greetings from './Greetings';
 import Form from './Form';
 import ReducerSample from './ReducerSample';
+import CounterContainer from './containers/CounterContainer';
 
 function App() {
   const onClick = (name: string) => {
@@ -23,9 +24,10 @@ function App() {
         optionalMsg="Welcome back!"
         onClick={onClick}
       />
-      <Counter />
+      {/* <Counter /> */}
+      <CounterContainer />
       <Form onSubmit={onSubmit} />
-      <ReducerSample />
+      {/* <ReducerSample /> */}
     </div>
   );
 }
