@@ -4,6 +4,7 @@ import Greetings from './Greetings';
 import Form from './Form';
 import ReducerSample from './ReducerSample';
 import CounterContainer from './containers/CounterContainer';
+import TodosContainer from './containers/TodosContainer';
 
 function App() {
   const onClick = (name: string) => {
@@ -28,6 +29,7 @@ function App() {
       <CounterContainer />
       <Form onSubmit={onSubmit} />
       {/* <ReducerSample /> */}
+      <TodosContainer />
     </div>
   );
 }
